@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { Button, Checkbox, Form, Input } from 'antd';
-import type { SizeType } from 'antd/es/config-provider/SizeContext';
-import { PlansItems } from './Plans.items';
+import React, { useState } from "react";
+import { Button, Checkbox, Form, Input } from "antd";
+import type { SizeType } from "antd/es/config-provider/SizeContext";
+import { PlansItems } from "./Plans.items";
 
-import styles from 'components/Form.module.css';
+import styles from "components/Form.module.css";
 
 export default function FormComponent() {
-  const [ size ] = useState<SizeType>('large');
+  const [size] = useState<SizeType>("large");
   const {
     text,
     valueInCents,
@@ -15,7 +15,7 @@ export default function FormComponent() {
     buttonText,
     contents,
     features,
-  } = PlansItems.find(item => item.text === "Plano Acesso Total");
+  } = PlansItems.find((item) => item.text === "Plano Acesso Total");
 
   return (
     <form className={styles.form}>
@@ -23,20 +23,34 @@ export default function FormComponent() {
         <h1 className={styles.headingOne}>{text}:</h1>
         <p>{packageContents}</p>
         <p>
-          {Array.isArray(contents) ? contents.map(content => {
-            return <span className={styles.shelfContentsItem} key={content}>{content}</span>
-          }) : <span className={styles.shelfContentsItem}>{contents}</span>}
+          {Array.isArray(contents) ? (
+            contents.map((content) => {
+              return (
+                <span className={styles.shelfContentsItem} key={content}>
+                  {content}
+                </span>
+              );
+            })
+          ) : (
+            <span className={styles.shelfContentsItem}>{contents}</span>
+          )}
         </p>
         <ul>
-          {features.map(feature => {
-            return <li key={feature}>
-              <span>{feature}</span>
-            </li>
+          {features.map((feature) => {
+            return (
+              <li key={feature}>
+                <span>{feature}</span>
+              </li>
+            );
           })}
         </ul>
         <div className={styles.shelfWrapper}>
-          <span className={styles.shelfValue}>R$ {Number(valueInCents/100)}</span>
-          <span className={styles.shelfRecurrence}>{recurrence === 'MONTHLY' ? 'por mês' : 'outra peridicidade'}</span>
+          <span className={styles.shelfValue}>
+            R$ {Number(valueInCents / 100)}
+          </span>
+          <span className={styles.shelfRecurrence}>
+            {recurrence === "MONTHLY" ? "por mês" : "outra peridicidade"}
+          </span>
         </div>
       </div>
       <div className={styles.detailsForm}>
@@ -48,13 +62,20 @@ export default function FormComponent() {
           initialValues={{ remember: true }}
           autoComplete="off"
         >
-          <Form.Item label="Email" name="email"
-            rules={[{ required: true, message: 'Please input your email!' }]}>
+          <Form.Item
+            label="Email"
+            name="email"
+            rules={[{ required: true, message: "Please input your email!" }]}
+          >
             <Input />
           </Form.Item>
 
-          <Form.Item label="Telefone Celular" name="mobile"
-            rules={[{ required: true, message: 'Please input your mobile phone!' }]}
+          <Form.Item
+            label="Telefone Celular"
+            name="mobile"
+            rules={[
+              { required: true, message: "Please input your mobile phone!" },
+            ]}
           >
             <Input />
           </Form.Item>

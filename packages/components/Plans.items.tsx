@@ -39,7 +39,10 @@ export const PlansItems = [
     recurrence: "MONTHLY",
     packageContents: "Todo o conteúdo do Brasil Paralelo",
     buttonText: "Assinar Acesso Total",
-    contents: ["O melhor plano do Brasil Paralelo.", "Todo conteúdo em uma única assinatura."],
+    contents: [
+      "O melhor plano do Brasil Paralelo.",
+      "Todo conteúdo em uma única assinatura.",
+    ],
     features: [
       "Advanced custom fields",
       "Audit log and data history",
@@ -48,4 +51,4 @@ export const PlansItems = [
       "Personalised+priority service",
     ],
   },
-]
+];
