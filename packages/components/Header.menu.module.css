@@ -1,0 +1,19 @@
+.ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0 0 0 2.22rem;
+}
+
+.li {
+  display: inline-block;
+  height: 100%;
+  padding: 0 1rem 0 0;
+  color: #FFF;
+  font-size: 1.25rem;
+  line-height: 2.6rem;
+  float: left;
+}
+
+.link {
+  color: #70707B;
+}

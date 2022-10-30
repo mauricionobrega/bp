@@ -1,4 +1,4 @@
 import * as React from "react";
-export const Button = () => {
+export const Popup = () => {
   return <button>Boop</button>;
 };

@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 24px 7rem;
+}
+
+.copy {
+  font-size: 16px;
+  line-height: 20px;
+  color: #A0A0AB;
+}

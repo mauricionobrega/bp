@@ -1,0 +1,56 @@
+.form {
+  background: #131313;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  width: 1024px;
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+.detailsWrapper {
+  flex-basis: 400px;
+}
+
+.detailsForm {
+  flex-basis: 500px;
+}
+
+.headingOne, .headingTwo {
+  color: #FFF;
+}
+
+.headingOne {
+  color: #0E9384;
+  font-size: 40px;
+}
+.headingTwo {
+  font-size: 30px;
+  color: #0E9384;
+}
+
+.shelfWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  padding: 0 32px;
+}
+
+.shelfValue {
+  height: 48px;
+  line-height: 48px;
+  margin-top: .7rem;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  color: #FFF;
+}
+
+.shelfRecurrence {
+  height: 1rem;
+  line-height: 1rem;
+  padding-left: .5rem;
+  margin-top: 44px;
+  font-size: 1rem;
+  color: #70707B;
+}

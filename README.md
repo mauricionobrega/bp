@@ -8,9 +8,9 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
+- `landing`: a [Next.js](https://nextjs.org) app
+- `product-details`: another [Next.js](https://nextjs.org) app
+- `ui`: a stub React component library shared by both `landing` and `product-details` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
@@ -29,7 +29,7 @@ This turborepo has some additional tools already setup for you:
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
+cd test-software-engineer
 npm run build
 ```
 
@@ -38,7 +38,7 @@ npm run build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
+cd test-software-engineer
 npm run dev
 ```
 
@@ -49,7 +49,7 @@ Turborepo can use a technique known as [Remote Caching](https://turborepo.org/do
 By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
 ```
-cd my-turborepo
+cd test-software-engineer
 npx turbo login
 ```
 

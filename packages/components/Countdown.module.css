@@ -1,0 +1,40 @@
+.countdown {
+  display: flex;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 12px 12px 24px 12px;
+}
+
+.wrapper {
+  position: relative;
+  margin-right: 1rem;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.strong {
+  font-size: 72px;
+  line-height: 90px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #15B79E;
+}
+
+.unit {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.sep {
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+  margin-top: -20px;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFF;
+}

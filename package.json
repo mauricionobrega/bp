@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "test-software-engineer",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -15,11 +15,13 @@
   "devDependencies": {
     "eslint-config-custom": "*",
     "prettier": "latest",
-    "turbo": "latest"
+    "turbo": "1.6.2"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.12.0"
   },
-  "dependencies": {},
-  "packageManager": "npm@8.19.2"
+  "packageManager": "npm@8.19.2",
+  "dependencies": {
+    "react-hydration-provider": "^1.0.1"
+  }
 }

@@ -1,0 +1,17 @@
+.header {
+  height: auto;
+  padding: 1.5rem 0;
+  line-height: 1.5rem;
+  background-color: #000;
+  border-bottom: 1px solid #26272B;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 7rem;
+}
+
+.globalNavigation {
+  display: flex;
+}
